@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="do_an_1.SignIn"
+            NavigationPage.HasNavigationBar="False"
              Title="Đăng Nhập">
     <ContentPage.Content>
         <Grid>
