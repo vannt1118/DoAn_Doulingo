@@ -1478,24 +1478,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\DoAn_Doulingo-main\\DoAn_Doulingo-main\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
       "projectName": "do_an_1.iOS",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\DoAn_Doulingo-main\\DoAn_Doulingo-main\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\DoAn_Doulingo-main\\DoAn_Doulingo-main\\do_an_1\\do_an_1.iOS\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1509,8 +1509,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\DoAn_Doulingo-main\\DoAn_Doulingo-main\\do_an_1\\do_an_1\\do_an_1.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\DoAn_Doulingo-main\\DoAn_Doulingo-main\\do_an_1\\do_an_1\\do_an_1.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj"
             }
           }
         }
