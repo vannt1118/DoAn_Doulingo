@@ -4,16 +4,17 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="do_an_1.Taohs">
+             x:Class="do_an_1.Taohs"
+              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="owl_6.png" HorizontalOptions="Center" Margin="20, 150, 20, 0" HeightRequest="150" WidthRequest="150"/>
+            <Image Source="owl_6.png" HorizontalOptions="Center" Margin="20, 100, 20, 0" HeightRequest="150" WidthRequest="150"/>
             <Label Text="Đã đến lúc tạo hồ sơ!" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large"
                TextColor="Black" Margin="20, 30, 20, 0"/>
             <Label Text="Tạo hồ sơ để lưu tiến trình của bạn và tiếp tục học miễn phí" HorizontalOptions="Center"
                TextColor="Gray" FontSize="Medium" Margin="20,10,20,0" VerticalTextAlignment="Center"/>
             <Button Text="TẠO HỒ SƠ" x:Name="profile" Clicked="profile_Clicked" TextColor="White" CornerRadius="10"
-               HorizontalOptions="Fill" Margin="20, 100, 20, 0" BackgroundColor="dodgerblue" FontSize="17" FontAttributes="Bold"/>
+               HorizontalOptions="Fill" Margin="20, 50, 20, 0" BackgroundColor="dodgerblue" FontSize="17" FontAttributes="Bold"/>
             <Button Text="HỦY" x:Name="cancel" Clicked="cancel_Clicked" TextColor="dodgerblue" CornerRadius="10"
                HorizontalOptions="Fill" Margin="20, 0, 20, 0" BackgroundColor="White" FontSize="17" FontAttributes="Bold"/>
         </StackLayout>

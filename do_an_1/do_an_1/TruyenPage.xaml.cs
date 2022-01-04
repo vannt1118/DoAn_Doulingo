@@ -13,13 +13,23 @@ namespace do_an_1
     public partial class TruyenPage : ContentPage
     {
         Database db = new Database();
-        List<Truyen> dstr;
+        User u;
         public TruyenPage()
         {
             InitializeComponent();
             Thu();
         }
-        
+
+        public TruyenPage(User nd)
+        {
+            InitializeComponent();
+            u = nd;
+            txtdiem.Text = nd.Diem.ToString();
+            txtten.Text = nd.TenND;
+
+            Thu();
+
+        }
         void Thu()
         {
             List<GroupTruyen> trs = new List<GroupTruyen>();

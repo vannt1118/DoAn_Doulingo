@@ -1034,7 +1034,7 @@ int drawable owl_1 0x7f0700aa
 int drawable owl_2 0x7f0700ab
 int drawable owl_3 0x7f0700ac
 int drawable owl_4 0x7f0700ad
-int drawable owl_5 0x7f0700ae
+int drawable owl_6 0x7f0700ae
 int drawable painting 0x7f0700af
 int drawable passport 0x7f0700b0
 int drawable pencil 0x7f0700b1

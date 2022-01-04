@@ -19,6 +19,13 @@ namespace do_an_1
             InitializeComponent();
             u = nd;
             Thu();
+            txtdiem.Text = nd.Diem.ToString();
+            txtten.Text = nd.TenND;
+        }
+
+        void HienThi()
+        {
+
         }
         public BaiHocPage()
         {
@@ -33,7 +40,6 @@ namespace do_an_1
             {
                 new BaiHoc
                 {
-
                     TenBH = "Baby",
                     Hinh = "lesson_baby.png",
                     MaChang = 1,

@@ -119,7 +119,7 @@
     <AndroidResource Include="Resources\drawable\owl_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\owl_5.png" />
+    <AndroidResource Include="Resources\drawable\owl_3.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\owl.png" />
@@ -131,7 +131,7 @@
     <AndroidResource Include="Resources\drawable\search.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\owl_3.png" />
+    <AndroidResource Include="Resources\drawable\owl_6.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\brainstorm.png" />

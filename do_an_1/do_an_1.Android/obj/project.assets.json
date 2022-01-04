@@ -2175,11 +2175,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.Android\\do_an_1.Android.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.Android\\do_an_1.Android.csproj",
       "projectName": "do_an_1.Android",
-      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.Android\\do_an_1.Android.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.Android\\do_an_1.Android.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.Android\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2200,8 +2200,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj": {
-              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj"
+            "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj"
             }
           }
         }

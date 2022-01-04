@@ -44,6 +44,7 @@ namespace do_an_1
                 nd.TenND = usrname.Text;
                 nd.MatKhau = txtmk.Text;
                 nd.Email = txtemail.Text;
+                nd.Diem = 0;
 
                 if (db.ThemNguoidung(nd) == true)
                 {

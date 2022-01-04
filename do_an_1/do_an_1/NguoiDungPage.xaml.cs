@@ -89,8 +89,12 @@ namespace do_an_1
 
         private void btndx_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
-            Navigation.RemovePage(this);
+            Navigation.PopToRootAsync();
+        }
+
+        private void img_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ChinhSuaPage(u));
         }
     }
 }

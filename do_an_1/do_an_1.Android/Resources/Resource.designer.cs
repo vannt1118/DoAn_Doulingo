@@ -5962,7 +5962,7 @@ namespace do_an_1.Droid
 			public const int owl_4 = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int owl_5 = 2131165358;
+			public const int owl_6 = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
 			public const int painting = 2131165359;

@@ -29,7 +29,7 @@ namespace do_an_1
                 IconImageSource = "tab_lessons.png"
             };
 
-            var tr = new NavigationPage(new TruyenPage())
+            var tr = new NavigationPage(new TruyenPage(nd))
             {
                 Title = "Kho Truyện",
                 IconImageSource = "tab_stories.png"

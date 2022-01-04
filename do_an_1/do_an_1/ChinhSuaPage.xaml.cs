@@ -33,6 +33,7 @@ namespace do_an_1
                 txtten.Text = u.TenND; ;
                 txtemail.Text = u.Email;
                 txthinh.Text = u.Hinh;
+                img.Source = txthinh.Text;
             }    
         }
         private async void btnhuy_Clicked(object sender, EventArgs e)
@@ -54,7 +55,11 @@ namespace do_an_1
             if(txtmand.Text != "")
             {
                 u1.MaND = int.Parse(txtmand.Text);
-                if (db.SuaNguoiDung(u1) == true)
+                /*if (db.TonTai(txtten.Text, txtemail.Text) == true)
+                {
+                    DisplayAlert("Thông báo", "Tên Đăng nhập hoặc Email đã có người sử dụng", "OK");
+                }
+                else*/ if (db.SuaNguoiDung(u1) == true)
                 {
                     DisplayAlert("Thông báo", "Cập nhật thông tin thành công", "OK");
                     Navigation.PushAsync(new NguoiDungPage(u1));
@@ -67,18 +72,21 @@ namespace do_an_1
 
         private void btnmk_Clicked(object sender, EventArgs e)
         {
-            img.Source = txthinh.Text;
+            Navigation.PushAsync(new MatKhauPage(u));
         }
 
         private void btndx_Clicked(object sender, EventArgs e)
         {
+            //Navigation.PopToRootAsync();
             Navigation.PushAsync(new MainPage());
             Navigation.RemovePage(this);
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)
         {
+            img.Source = txthinh.Text;
             txthinh.Focus();
+
         }
     }
 }

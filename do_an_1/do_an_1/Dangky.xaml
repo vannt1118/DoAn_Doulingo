@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="do_an_1.Dangky"
+             NavigationPage.HasNavigationBar="False"
              Title="Đăng ký">
     <ContentPage.Content>
         <StackLayout>

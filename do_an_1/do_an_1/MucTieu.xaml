@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="do_an_1.MucTieu">
+             x:Class="do_an_1.MucTieu"
+              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Chọn một mục tiêu" TextColor="Black" FontAttributes="Bold" Margin="20, 20, 0, 40"

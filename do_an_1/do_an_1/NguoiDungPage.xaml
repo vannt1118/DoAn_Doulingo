@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <ScrollView>
 
-            <StackLayout Padding="20,20,20,0">
+            <StackLayout Padding="20,20,20,20">
                 <Grid HeightRequest="50">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="70"/>
@@ -49,7 +49,7 @@
                     IsClippedToBounds="True"
                     VerticalOptions="Center"
                     WidthRequest="150">
-                            <Image Source="profile_friends_bart.png" x:Name="img" />
+                            <ImageButton x:Name="img" Clicked="img_Clicked" />
                         </Frame>
 
                         <Label
