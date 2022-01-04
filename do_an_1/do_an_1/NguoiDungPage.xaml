@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="do_an_1.NguoiDungPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Padding="20,20,20,0">
+                <Grid HeightRequest="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="70"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                    Grid.Column="1"
+                HorizontalTextAlignment="Center"
+                Text="Hồ sơ cá nhân"
+                TextColor= "DarkGreen"
+                    FontAttributes="Bold" FontSize="Title"
+                VerticalTextAlignment="Center" />
+
+                    <ImageButton
+                Grid.Column="2"
+                HeightRequest="10"
+                Source="navbar_configuration.png"
+                BackgroundColor="Transparent"
+                 Clicked="ImageButton_Clicked"/>
+                </Grid>
+                <Grid Margin="{OnPlatform Android=0, iOS='0,0,0,66'}" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackLayout
+                Grid.Row="0"
+                Spacing="25"
+                VerticalOptions="Center">
+                        <Frame
+                    Padding="0"
+                    BackgroundColor="LightGray"
+                    CornerRadius="50"
+                    HasShadow="False"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    IsClippedToBounds="True"
+                    VerticalOptions="Center"
+                    WidthRequest="150">
+                            <Image Source="profile_friends_bart.png" x:Name="img" />
+                        </Frame>
+
+                        <Label
+                    FontSize="25"
+                    HorizontalTextAlignment="Center"
+                    x:Name="txtten" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Label HorizontalOptions="Center" x:Name="txtemail"/>
+                    </StackLayout>
+                    <StackLayout Padding="15" Grid.Row="2">
+                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold"/>
+                        <Grid HeightRequest="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Tên Người Dùng" Grid.Column="1" VerticalOptions="Center" FontSize="16"/>
+                            <Image Source="navbar_diamond.png" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2"/>
+                        </Grid>
+                        <ListView x:Name="lstnd" RowHeight="60">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid RowSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="100"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Source="{Binding Hinh}" Grid.Column="0" HeightRequest="60" Aspect='AspectFit'/>
+                                            <Label Text="{Binding TenND}" Grid.Column="1" VerticalOptions="Center" FontSize="20"/>
+                                            <Label Text="{Binding Diem}" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Grid>
+                <Button x:Name="btndx" Text="đăng xuất" Clicked="btndx_Clicked" BackgroundColor="DodgerBlue" CornerRadius="10"/>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

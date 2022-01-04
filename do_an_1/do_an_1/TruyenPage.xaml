@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="do_an_1.TruyenPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HeightRequest="50" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="{Binding TenNd}" FontSize="25" FontAttributes="Bold" Margin="20,0,0,0" HorizontalOptions="Start" Grid.Column="0"/>
+                <StackLayout Orientation="Horizontal" Grid.Column="1" HorizontalOptions="End">
+                    <Image Source="navbar_diamond.png" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label Text="120" FontSize="25" VerticalOptions="Center" FontAttributes="Bold" Margin="0, 0, 10, 0"/>
+                </StackLayout>
+            </Grid>
+            <ScrollView>
+                <StackLayout Padding="20">
+                    <Label Text="Kho truyện Doulingo" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" TextColor="DarkGreen"/>
+                    <Label Text="Cải thiện khả năng đọc của bạn với những câu chuyện ngắn!" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center"/>
+                    <ListView x:Name="lsttr" HasUnevenRows="True" IsGroupingEnabled="True"
+                      GroupDisplayBinding="{Binding MaNhom }" ItemTapped="lsttr_ItemTapped">
+                        <ListView.GroupHeaderTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout BackgroundColor="SkyBlue" Padding="0,20, 0,10">
+                                        <Label Text="----- Nhóm -----" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                        <Label Text="{Binding TenNhom}" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.GroupHeaderTemplate>
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="150"/>
+                                                <RowDefinition Height="50"/>
+                                            </Grid.RowDefinitions>
+                                            <ImageButton Source="{Binding Hinh}" HeightRequest="150" Clicked='ImageButton_Clicked' BackgroundColor="Transparent"
+                                                 Grid.Row="0" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding TenTruyen}" FontSize="Subtitle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start"/>
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

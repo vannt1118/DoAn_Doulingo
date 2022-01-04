@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="do_an_1.SignIn"
+             Title="Đăng Nhập">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Entry Keyboard="Text" Placeholder="Tên đăng nhập hoặc email" VerticalOptions="Center" x:Name="usrName"
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Fill" Margin="20, 0, 20, 0"/>
+            
+            <Entry Keyboard="Text" Placeholder="Mật khẩu" VerticalOptions="Start" x:Name="usrPassword"
+                   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 0, 20, 0" IsPassword="true"/>
+
+            <Button Text="ĐĂNG NHẬP" x:Name="cmdsubmit" Clicked="cmdsubmit_Clicked" VerticalOptions="Start" HorizontalOptions="Fill"
+                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 0, 20, 10" BackgroundColor="LightGray" CornerRadius="10"/>
+
+            <Button Text="ĐĂNG KÝ" x:Name="dk" TextColor="Black"  VerticalOptions="Start" CornerRadius="10" Clicked="dk_Clicked"
+                   Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Fill" BackgroundColor="paleturquoise" Margin="20, 0, 20, 0"/>
+            
+            <Button Text="FACEBOOK" x:Name="cmdfb" Clicked="cmdfb_Clicked"  HorizontalOptions="Fill"  ImageSource="facebook.png" CornerRadius="10"
+                    Grid.Row="4" Grid.Column="0" TextColor="Blue" BackgroundColor="Gainsboro" BorderColor="White" Margin="20, 50, 10, 10"
+                    HeightRequest="50" Padding="10,10,10,10"/>
+
+            <Button Text="GOOGLE" x:Name="cmdgg" Clicked="cmdgg_Clicked"  HorizontalOptions="Fill" ImageSource="search.png" CornerRadius="10"
+                    Grid.Row="4" Grid.Column="1" TextColor="Red" BackgroundColor="Gainsboro" BorderColor="White"  Margin="10, 50, 20, 10"
+                    HeightRequest="50" Padding="10,10,10,10"/>
+            
+            <Label Text="Khi đăng ký trên Duolingo, bạn đã đồng ý với Các chính sách và Chính sách bảo mật của chúng tôi" TextColor="Gray" FontSize="12" 
+                   VerticalOptions="Center" Margin="20, 0, 20, 10"
+                   Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
