@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj": {}
+    "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
         "projectName": "do_an_1.iOS",
-        "projectPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\do_an_1.iOS.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.iOS\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj": {
-                "projectPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj"
+              "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj": {
+                "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj",
         "projectName": "do_an_1",
-        "projectPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

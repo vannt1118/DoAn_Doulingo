@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uBqXtfxwEdxVb9Jwk5hVD1riCAD3xgS0mLmDz91+x+ftL5ZvtrVwk/vJ/qn/i5BGEQV7ENeApo6/M/Cyi08yDw==",
+  "dgSpecHash": "o5mRvCElyHJe6EPV932zZUlDpC+ePv2rWQEGaFV0r0tQNkhnRy0rAciWzqsKgoPp1Ot32Eed0Aepr4W7B2lfag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1.Android\\do_an_1.Android.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1.Android\\do_an_1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",

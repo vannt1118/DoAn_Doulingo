@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="do_an_1.ChinhSuaPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             >
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="10" Padding="40">
@@ -35,7 +36,7 @@
                 </StackLayout>
                 <Button x:Name="btnmk" Text="đổi mật khẩu" Clicked="btnmk_Clicked" TextColor="DarkGreen" FontAttributes="Bold"
                     BackgroundColor="Transparent"/>
-                <Button x:Name="btndx" Text="đăng xuất" Clicked="btndx_Clicked" BackgroundColor="DodgerBlue" CornerRadius="10"/>
+                <Button x:Name="btndx" Text="Xong" Clicked="btndx_Clicked" BackgroundColor="DodgerBlue" CornerRadius="10"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -49,7 +49,7 @@ namespace do_an_1
                 if (db.ThemNguoidung(nd) == true)
                 {
                     DisplayAlert("Thông báo", "Chúc mừng đăng ký thành công", "Bắt đầu thôi");
-                    Navigation.PushAsync(new TongQuan());
+                    Navigation.PushAsync(new SignIn());
                 }
                 else
                 {

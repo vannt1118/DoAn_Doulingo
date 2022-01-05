@@ -82,14 +82,16 @@ namespace do_an_1
             lstnd.ItemsSource = nds;
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+        private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ChinhSuaPage(u));
+            var csp = new ChinhSuaPage(u);
+            await Navigation.PushModalAsync(csp);
         }
 
         private void btndx_Clicked(object sender, EventArgs e)
         {
-            Navigation.PopToRootAsync();
+
+            Navigation.PopModalAsync();
         }
 
         private void img_Clicked(object sender, EventArgs e)

@@ -19,7 +19,7 @@ namespace do_an_1
             InitializeComponent();
         }
 
-        private void cmdsubmit_Clicked(object sender, EventArgs e)
+        private async void cmdsubmit_Clicked(object sender, EventArgs e)
         {
             
             var ten = usrName.Text;
@@ -36,7 +36,7 @@ namespace do_an_1
             {
                 User u = db.LayNd(ten);
                 DisplayAlert("Thông báo", "Đăng nhập thành công", "OK");
-                Navigation.PushAsync(new TabPage(u));
+                Navigation.PushModalAsync( new TabPage(u));
             }
             else
             {

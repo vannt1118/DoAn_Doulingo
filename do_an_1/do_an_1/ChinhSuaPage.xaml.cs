@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -41,7 +40,7 @@ namespace do_an_1
             var ans = await DisplayAlert("Thông báo", "Thay đổi của bạn sẽ không được lưu lại. Bạn có chắc muốn hủy?", "Yes", "No");
             if (ans)
             {
-                Navigation.PopAsync();
+                Navigation.PopModalAsync();
             }    
         }
 
@@ -62,7 +61,7 @@ namespace do_an_1
                 else*/ if (db.SuaNguoiDung(u1) == true)
                 {
                     DisplayAlert("Thông báo", "Cập nhật thông tin thành công", "OK");
-                    Navigation.PushAsync(new NguoiDungPage(u1));
+                    HienThi();
                 }
                 else
                     DisplayAlert("Thông báo", "Ghi lỗi", "OK");
@@ -77,9 +76,8 @@ namespace do_an_1
 
         private void btndx_Clicked(object sender, EventArgs e)
         {
-            //Navigation.PopToRootAsync();
-            Navigation.PushAsync(new MainPage());
-            Navigation.RemovePage(this);
+
+            Navigation.PopModalAsync();
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U0ZSH9RQ9E7NVIaZadP2sknVJvf6mLNJaBfNTm/rpuryr/szIKRNe2kdtHdXvbYxbiLmzUMyYFZmV9ElYyaiHw==",
+  "dgSpecHash": "1Ul7jS6G6EFKhBMwdC+ZNwfxjApQkDemTOzSw/8vjyPiGbPuIyjn+PKmaDdZpKBy5aMVt60hhvKQ7yKR9DMHYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\do_an_1\\do_an_1\\do_an_1\\do_an_1.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\do_an_1\\do_an_1\\do_an_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
