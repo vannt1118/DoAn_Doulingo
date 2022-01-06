@@ -18,16 +18,16 @@
             </Grid>
             <ScrollView>
                 <StackLayout Padding="20">
-                    <Label Text="Kho truyện Doulingo" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" TextColor="DarkGreen"/>
-                    <Label Text="Cải thiện khả năng đọc của bạn với những câu chuyện ngắn!" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center"/>
+                    <Label Text="Kho truyện Doulingo" Style="{StaticResource title}" />
+                    <Label Text="Cải thiện khả năng đọc của bạn với những câu chuyện ngắn!" HorizontalOptions="Center" VerticalOptions="Center" FontSize="16" HorizontalTextAlignment="Center"/>
                     <ListView x:Name="lsttr" HasUnevenRows="True" IsGroupingEnabled="True"
-                      GroupDisplayBinding="{Binding MaNhom }" ItemTapped="lsttr_ItemTapped">
+                      GroupDisplayBinding="{Binding MaNhom }" ItemTapped="lsttr_ItemTapped" Margin="0,40, 0, 0">
                         <ListView.GroupHeaderTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <StackLayout BackgroundColor="SkyBlue" Padding="0,20, 0,10">
-                                        <Label Text="----- Nhóm -----" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                        <Label Text="{Binding TenNhom}" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <StackLayout Padding="0,20, 0,10">
+                                        <Label Text="----- Nhóm -----" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="DarkGreen"/>
+                                        <Label Text="{Binding TenNhom}" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="DarkGreen"/>
                                     </StackLayout>
                                 </ViewCell>
                             </DataTemplate>

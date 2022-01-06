@@ -8,11 +8,11 @@
              NavigationPage.HasNavigationBar="False">
     <StackLayout>
         <Image Source="owl_1.png" Margin="0, 150, 0, 30" HorizontalOptions="Center"/>
-        <Label Text="Duolingo" TextColor="Green" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"/>
-        <Label Text="Học ngoại ngữ miễn phí. Mãi mãi." TextColor="Gray" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center"/>
-        <Button Text="BẮT ĐẦU NGAY" x:Name="cmdstart" Clicked="cmdstart_Clicked" TextColor="White"  VerticalOptions="Start" HorizontalOptions="Fill" BackgroundColor="Green" 
-                Margin="30, 100, 30, 8" CornerRadius="10"/>
-        <Button Text="TÔI ĐÃ CÓ TÀI KHOẢN" x:Name="cmdtk" Clicked="cmdtk_Clicked" TextColor="Green" VerticalOptions="End" HorizontalOptions="Fill" BackgroundColor="White"
-                Margin="30, 0, 30, 10" BorderColor="Gray" CornerRadius="10"/>
+        <Label Text="Duolingo" Style="{StaticResource title}"/>
+        <Label Text="Học ngoại ngữ miễn phí. Mãi mãi." TextColor="Gray" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="BẮT ĐẦU NGAY" x:Name="cmdstart" Clicked="cmdstart_Clicked" Style="{StaticResource btnnext}"  
+                Margin="30, 100, 30, 8"/>
+        <Button Text="TÔI ĐÃ CÓ TÀI KHOẢN" x:Name="cmdtk" Clicked="cmdtk_Clicked" Style="{StaticResource btnpre}"
+                Margin="30, 0, 30, 10" />
     </StackLayout>
 </ContentPage>

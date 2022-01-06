@@ -5,9 +5,8 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-
-            <StackLayout Padding="20,20,20,20">
-                <Grid HeightRequest="50">
+            <StackLayout Padding="20,40,20,20">
+                <Grid HeightRequest="80">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="70"/>
                         <ColumnDefinition Width="*"/>
@@ -16,11 +15,9 @@
 
                     <Label
                     Grid.Column="1"
-                HorizontalTextAlignment="Center"
+                Style="{StaticResource title}"
                 Text="Hồ sơ cá nhân"
-                TextColor= "DarkGreen"
-                    FontAttributes="Bold" FontSize="Title"
-                VerticalTextAlignment="Center" />
+                   />
 
                     <ImageButton
                 Grid.Column="2"
@@ -44,12 +41,12 @@
                     BackgroundColor="LightGray"
                     CornerRadius="50"
                     HasShadow="False"
-                    HeightRequest="150"
+                    HeightRequest="50"
                     HorizontalOptions="Center"
                     IsClippedToBounds="True"
                     VerticalOptions="Center"
-                    WidthRequest="150">
-                            <ImageButton x:Name="img" Clicked="img_Clicked" />
+                    WidthRequest="50">
+                            <ImageButton x:Name="img" Clicked="img_Clicked" HeightRequest="50" />
                         </Frame>
 
                         <Label
@@ -61,14 +58,14 @@
                         <Label HorizontalOptions="Center" x:Name="txtemail"/>
                     </StackLayout>
                     <StackLayout Padding="15" Grid.Row="2">
-                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold"/>
-                        <Grid HeightRequest="50">
+                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="Black" />
+                        <Grid HeightRequest="50" Margin="0,20,0,40">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="100"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="Tên Người Dùng" Grid.Column="1" VerticalOptions="Center" FontSize="16"/>
+                            <Label Text="Tên Người Dùng" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
                             <Image Source="navbar_diamond.png" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2"/>
                         </Grid>
                         <ListView x:Name="lstnd" RowHeight="60">
@@ -92,7 +89,9 @@
                         </ListView>
                     </StackLayout>
                 </Grid>
-                <Button x:Name="btndx" Text="đăng xuất" Clicked="btndx_Clicked" BackgroundColor="DodgerBlue" CornerRadius="10"/>
+                <Button x:Name="btnmk" Text="đổi mật khẩu" Clicked="btnmk_Clicked" Style="{StaticResource btnpre}" Margin="0, 40, 0 ,0" 
+                   />
+                <Button x:Name="btndx" Text="đăng xuất" Clicked="btndx_Clicked" Style="{StaticResource btnnext}"/>
             </StackLayout>
 
         </ScrollView>

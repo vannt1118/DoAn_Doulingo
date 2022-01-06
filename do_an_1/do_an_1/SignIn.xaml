@@ -8,16 +8,16 @@
               NavigationPage.HasNavigationBar="False"
              Title="Đăng Nhập">
     <ContentPage.Content>
-        <StackLayout Padding="0,20,0,20">
+        <StackLayout Padding="0,40,0,10">
 
-        <Label Text="Đăng nhập" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+        <Label Text="Đăng nhập" Style="{StaticResource title}"></Label>
         <Grid>
             <Grid.RowDefinitions>
                     <RowDefinition  Height="80" />
                     <RowDefinition  Height="80" />
                     <RowDefinition  Height="60" />
                     <RowDefinition  Height="60" />
-                    <RowDefinition  Height="200" />
+                    <RowDefinition  Height="100" />
                     <RowDefinition  Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -31,22 +31,22 @@
             <Entry Keyboard="Text" Placeholder="Mật khẩu" VerticalOptions="Start" x:Name="usrPassword"
                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 0, 20, 0" IsPassword="true"/>
 
-            <Button Text="ĐĂNG NHẬP" x:Name="cmdsubmit" Clicked="cmdsubmit_Clicked" VerticalOptions="Start" HorizontalOptions="Fill"
-                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 0, 20, 5" BackgroundColor="DarkGreen" TextColor="White" CornerRadius="10"/>
+            <Button Text="ĐĂNG NHẬP" x:Name="cmdsubmit" Clicked="cmdsubmit_Clicked" VerticalOptions="Start" Style="{StaticResource btnnext}"
+                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 0, 20, 5" />
 
-            <Button Text="ĐĂNG KÝ" x:Name="dk" TextColor="Black"  VerticalOptions="Start" CornerRadius="10" Clicked="dk_Clicked"
-                   Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Fill" BackgroundColor="LightGray" Margin="20, 0, 20, 0"/>
+            <Button Text="ĐĂNG KÝ" x:Name="dk"  VerticalOptions="Start"  Clicked="dk_Clicked" Style="{StaticResource btnpre}"
+                   Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 0, 20, 0"/>
             
             <Button Text="FACEBOOK" x:Name="cmdfb" Clicked="cmdfb_Clicked"  HorizontalOptions="Fill"  ImageSource="facebook.png" CornerRadius="10"
-                    Grid.Row="4" Grid.Column="0" TextColor="Blue" BackgroundColor="Transparent" BorderColor="White" Margin="20, 50, 10, 10"
-                    HeightRequest="200" Padding="10,10,10,10"/>
+                    Grid.Row="4" Grid.Column="0" TextColor="Blue" BackgroundColor="Transparent" BorderColor="White" Margin="20, 10, 10, 10"
+                    HeightRequest="100" Padding="10,10,10,10"/>
 
             <Button Text="GOOGLE" x:Name="cmdgg" Clicked="cmdgg_Clicked"  HorizontalOptions="Fill" ImageSource="search.png" CornerRadius="10"
-                    Grid.Row="4" Grid.Column="1" TextColor="Red" BackgroundColor="Transparent" BorderColor="White"  Margin="10, 50, 20, 10"
-                    HeightRequest="200" Padding="10,10,10,10"/>
+                    Grid.Row="4" Grid.Column="1" TextColor="Red" BackgroundColor="Transparent" BorderColor="White"  Margin="10, 10, 20, 10"
+                    HeightRequest="100" Padding="10,10,10,10"/>
             
-            <Label Text="Khi đăng ký trên Duolingo, bạn đã đồng ý với Các chính sách và Chính sách bảo mật của chúng tôi" TextColor="Gray" FontSize="14" 
-                   VerticalOptions="Center" Margin="20, 0, 20, 10"
+            <Label Text="Khi đăng ký trên Duolingo, bạn đã đồng ý với Các chính sách và Chính sách bảo mật của chúng tôi" TextColor="Gray" Style="{StaticResource content}"
+                   VerticalOptions="Center" Margin="20, 20, 20, 10"
                    Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
         </Grid>
 

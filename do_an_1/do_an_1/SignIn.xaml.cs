@@ -17,6 +17,8 @@ namespace do_an_1
         public SignIn()
         {
             InitializeComponent();
+            usrPassword.Text = "";
+            usrName.Focus();
         }
 
         private async void cmdsubmit_Clicked(object sender, EventArgs e)
@@ -36,7 +38,7 @@ namespace do_an_1
             {
                 User u = db.LayNd(ten);
                 DisplayAlert("Thông báo", "Đăng nhập thành công", "OK");
-                Navigation.PushModalAsync( new TabPage(u));
+                await Navigation.PushModalAsync( new TabPage(u));
             }
             else
             {
@@ -49,12 +51,12 @@ namespace do_an_1
 
         private void cmdfb_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new TongQuan());
+            
         }
 
         private void cmdgg_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new TongQuan());
+           
         }
 
         private void dk_Clicked(object sender, EventArgs e)

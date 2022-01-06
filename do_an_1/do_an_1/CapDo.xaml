@@ -26,7 +26,7 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="2*"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Source="{Binding levelImg}" Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Grid.RowSpan="2" Margin="0,10,0,0"
+                                <Image Source="{Binding levelImg}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" Grid.RowSpan="2" Margin="0,10,0,0"
                                        HeightRequest="130" WidthRequest="120" VerticalOptions="Center"  HorizontalOptions="Center"/>
                                 <Label Text="{Binding levelName}" Grid.Row="0" Grid.Column="1" TextColor="Black" 
                                    FontAttributes="Bold" FontSize="17" Margin="0,7,20,0"/>
@@ -42,9 +42,9 @@
                 <Grid.RowDefinitions>
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" TextColor="White" 
-                                        VerticalOptions="End" HorizontalOptions="Fill" Grid.Row="0" Grid.Column="0"
-                                        Margin="20, 0, 20, 10" BackgroundColor="Green" CornerRadius="10"/>
+                <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End"
+                                        Grid.Row="0" Grid.Column="0"
+                                        Margin="20, 0, 20, 10" />
 
             </Grid>
         </StackLayout>

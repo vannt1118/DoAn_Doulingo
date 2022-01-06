@@ -6,8 +6,8 @@
              >
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="10" Padding="40">
-                <Label Text="Chỉnh sửa thông tin" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" TextColor="DarkGreen"/>
+            <StackLayout Spacing="10" Padding="20,40,20,0">
+                <Label Text="Chỉnh sửa thông tin" Style="{StaticResource title}"/>
                 <ImageButton x:Name="img"  WidthRequest="150" HeightRequest="150" BackgroundColor="LightGray" HorizontalOptions="Center" CornerRadius="50" Clicked="ImageButton_Clicked"/>
                 <Grid Margin="0,10,0,0">
                     <Grid.RowDefinitions>
@@ -31,12 +31,11 @@
                     <Entry x:Name="txthinh" Keyboard="Text" Grid.Column="1" Grid.Row="3"/>
                 </Grid>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="50" Margin="0,10,0,10">
-                    <Button x:Name="btnhuy" Text="hủy" Clicked="btnhuy_Clicked" CornerRadius="10"/>
-                    <Button x:Name="btnluu" Text="lưu" Clicked="btnluu_Clicked" BackgroundColor="DarkGreen" TextColor="White" CornerRadius="10"/>
+                    <Button x:Name="btnhuy" Text="hủy" Clicked="btnhuy_Clicked" Style="{StaticResource btnpre}"/>
+                    <Button x:Name="btnluu" Text="lưu" Clicked="btnluu_Clicked" Style="{StaticResource btnnext}"/>
                 </StackLayout>
-                <Button x:Name="btnmk" Text="đổi mật khẩu" Clicked="btnmk_Clicked" TextColor="DarkGreen" FontAttributes="Bold"
-                    BackgroundColor="Transparent"/>
-                <Button x:Name="btndx" Text="Xong" Clicked="btndx_Clicked" BackgroundColor="DodgerBlue" CornerRadius="10"/>
+                
+                <Button x:Name="btndx" Text="Xong" Clicked="btndx_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End" Margin="0, 40, 0, 0"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

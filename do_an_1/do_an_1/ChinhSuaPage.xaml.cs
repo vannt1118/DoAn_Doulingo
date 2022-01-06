@@ -11,7 +11,7 @@ namespace do_an_1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChinhSuaPage : ContentPage
     {
-        Database db = new Database();
+        Database db;
         User u;
         public ChinhSuaPage()
         {
@@ -20,10 +20,10 @@ namespace do_an_1
         public ChinhSuaPage(User nd)
         {
             InitializeComponent();
+            db = new Database();
             u = nd;
             HienThi();
         }
-
         void HienThi()
         {
             if (u != null)
@@ -40,7 +40,7 @@ namespace do_an_1
             var ans = await DisplayAlert("Thông báo", "Thay đổi của bạn sẽ không được lưu lại. Bạn có chắc muốn hủy?", "Yes", "No");
             if (ans)
             {
-                Navigation.PopModalAsync();
+                Navigation.PopAsync();
             }    
         }
 
@@ -50,7 +50,7 @@ namespace do_an_1
             var h = txthinh.Text;
             var eml = txtemail.Text;
 
-            User u1 = new User { TenND = txtten.Text, Email = txtemail.Text, Hinh = txthinh.Text };
+            User u1 = new User { TenND = txtten.Text, Email = txtemail.Text, Hinh = txthinh.Text, Diem = u.Diem, MatKhau= u.MatKhau };
             if(txtmand.Text != "")
             {
                 u1.MaND = int.Parse(txtmand.Text);
@@ -60,8 +60,10 @@ namespace do_an_1
                 }
                 else*/ if (db.SuaNguoiDung(u1) == true)
                 {
+                    u = u1;
                     DisplayAlert("Thông báo", "Cập nhật thông tin thành công", "OK");
                     HienThi();
+                    
                 }
                 else
                     DisplayAlert("Thông báo", "Ghi lỗi", "OK");
@@ -69,15 +71,11 @@ namespace do_an_1
             
         }
 
-        private void btnmk_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MatKhauPage(u));
-        }
-
+        
         private void btndx_Clicked(object sender, EventArgs e)
         {
 
-            Navigation.PopModalAsync();
+            Navigation.PushAsync( new NguoiDungPage(u));
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)

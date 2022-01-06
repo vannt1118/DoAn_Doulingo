@@ -29,15 +29,20 @@ namespace do_an_1
 
         private void txthuy_Clicked(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            Navigation.PopModalAsync();
         }
 
         private void txtluu_Clicked(object sender, EventArgs e)
         {
+            var mk = txtcu.Text;
             var moi = txtmoi.Text;
             var xn = txtxn.Text;
 
-            if (moi != xn)
+            if (mk != u.MatKhau)
+            {
+                DisplayAlert("Thông báo", "Mật khẩu hiện tại không đúng. Vui lòng nhập lại!", "Ok");
+            }
+            else if (moi != xn)
             {
                 DisplayAlert("Thông báo", "Mật khẩu xác nhận không khớp.", "OK");
             }
@@ -47,7 +52,7 @@ namespace do_an_1
                 if (db.SuaNguoiDung(u) == true)
                 {
                     DisplayAlert("Thông báo", "Thay đổi mật khẩu thành công!", "OK");
-                    Navigation.PushAsync(new NguoiDungPage(u));
+                    Navigation.PopModalAsync();
                 }
                 else
                 {
