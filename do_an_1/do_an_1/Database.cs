@@ -160,6 +160,31 @@ namespace do_an_1
                 return null;
             }
         }
+        public List<User> LayND()
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Table<User>().ToList();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public List<User> LayTopND()
+        {
+            try 
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Query<User>("select * from User order by Diem limit 5");
+            }
+            catch
+            {
+                return null;
+            }
+        }
         // Thêm
         public bool ThemNguoidung(User nd)
         {

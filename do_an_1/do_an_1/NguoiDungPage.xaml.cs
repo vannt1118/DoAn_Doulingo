@@ -24,8 +24,9 @@ namespace do_an_1
             u = nd;
             txtten.Text = nd.TenND;
             txtemail.Text = nd.Email;
+            txtdiem.Text = nd.Diem.ToString();
             img.Source = nd.Hinh;
-            Thu();
+            KhoiTao();
         }
 
         public NguoiDungPage(string ten, string hinh, string email)
@@ -34,7 +35,13 @@ namespace do_an_1
             txtten.Text = ten;
             txtemail.Text = email;
             img.Source = hinh;
-            Thu();
+            KhoiTao();
+        }
+        void KhoiTao()
+        {
+            List<User> nds = new List<User>();
+            nds = db.LayTopND();
+            lstnd.ItemsSource = nds;
         }
         void Thu()
         {

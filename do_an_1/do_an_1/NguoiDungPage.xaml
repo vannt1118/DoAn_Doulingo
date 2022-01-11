@@ -41,12 +41,12 @@
                     BackgroundColor="LightGray"
                     CornerRadius="50"
                     HasShadow="False"
-                    HeightRequest="50"
+                    HeightRequest="150"
                     HorizontalOptions="Center"
                     IsClippedToBounds="True"
                     VerticalOptions="Center"
-                    WidthRequest="50">
-                            <ImageButton x:Name="img" Clicked="img_Clicked" HeightRequest="50" />
+                    WidthRequest="150">
+                            <ImageButton x:Name="img" Clicked="img_Clicked" HeightRequest="150" />
                         </Frame>
 
                         <Label
@@ -56,10 +56,14 @@
                     </StackLayout>
                     <StackLayout Grid.Row="1">
                         <Label HorizontalOptions="Center" x:Name="txtemail"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label x:Name="txtdiem" FontSize="25"/>
+                            <Image Source="navbar_diamond.png" HeightRequest="30"/>
+                        </StackLayout>
                     </StackLayout>
                     <StackLayout Padding="15" Grid.Row="2">
-                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="Black" />
-                        <Grid HeightRequest="50" Margin="0,20,0,40">
+                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="Black" Margin="0,20,0,0" />
+                        <Grid HeightRequest="40" Margin="0,20,0,40">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100"/>
                                 <ColumnDefinition Width="*"/>
@@ -80,8 +84,8 @@
                                             </Grid.ColumnDefinitions>
 
                                             <Image Source="{Binding Hinh}" Grid.Column="0" HeightRequest="60" Aspect='AspectFit'/>
-                                            <Label Text="{Binding TenND}" Grid.Column="1" VerticalOptions="Center" FontSize="20"/>
-                                            <Label Text="{Binding Diem}" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                                            <Label Text="{Binding TenND}" Grid.Column="1" VerticalOptions="Center" FontSize="25" />
+                                            <Label Text="{Binding Diem}" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="25"/>
                                         </Grid>
                                     </ViewCell>
                                 </DataTemplate>
