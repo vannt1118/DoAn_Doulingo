@@ -38,6 +38,10 @@ namespace do_an_1
             var moi = txtmoi.Text;
             var xn = txtxn.Text;
 
+            if (mk == moi)
+            {
+                DisplayAlert("Thông báo", "Mật khẩu mới không được trùng mật khẩu hiện tại. Vui lòng nhập lại.", "OK");
+            }    
             if (mk != u.MatKhau)
             {
                 DisplayAlert("Thông báo", "Mật khẩu hiện tại không đúng. Vui lòng nhập lại!", "Ok");

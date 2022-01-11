@@ -13,6 +13,14 @@ namespace do_an_1
         public string Hinh { get; set; }
         public int MaChang { get; set; }
         public string ThanhTich { get; set; }
+        public int Diem { get; set; }
+/*        public int MaND { get; set; }
+
+        void ThemND(int mand)
+        {
+            MaND = mand;
+        }
+
        /* public int MaND { get; set; }
         
        public BaiHoc(int mabh, string tenbh, string hinh, int machang, int mand)

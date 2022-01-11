@@ -24,11 +24,14 @@ namespace do_an_1
         {
             InitializeComponent();
             u = nd;
-            txtdiem.Text = nd.Diem.ToString();
-            txtten.Text = nd.TenND;
-
+            HienThi(nd);
             Thu();
 
+        }
+        void HienThi(User nd)
+        {
+            txtdiem.Text = nd.Diem.ToString();
+            txtten.Text = nd.TenND;
         }
         void Thu()
         {
@@ -95,7 +98,9 @@ namespace do_an_1
 
         private void lsttr_ItemTapped(object sender, ItemTappedEventArgs e)
         {
+            User u1 = db.LayNd(u.TenND);
 
+            HienThi(u1);
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)

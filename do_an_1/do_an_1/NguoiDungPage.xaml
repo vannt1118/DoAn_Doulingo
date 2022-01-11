@@ -22,6 +22,7 @@
                     <ImageButton
                 Grid.Column="2"
                 HeightRequest="10"
+                WidthRequest="10"
                 Source="navbar_configuration.png"
                 BackgroundColor="Transparent"
                  Clicked="ImageButton_Clicked"/>
@@ -51,6 +52,7 @@
 
                         <Label
                     FontSize="25"
+                    FontAttributes="Bold"
                     HorizontalTextAlignment="Center"
                     x:Name="txtten" />
                     </StackLayout>
@@ -61,18 +63,18 @@
                             <Image Source="navbar_diamond.png" HeightRequest="30"/>
                         </StackLayout>
                     </StackLayout>
-                    <StackLayout Padding="15" Grid.Row="2">
-                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="Black" Margin="0,20,0,0" />
-                        <Grid HeightRequest="40" Margin="0,20,0,40">
+                    <StackLayout Grid.Row="2">
+                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="DarkGreen" Margin="0,40,0,0" />
+                        <Grid HeightRequest="30" Margin="0,5,0,40">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="100"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="Tên Người Dùng" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
-                            <Image Source="navbar_diamond.png" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2"/>
+                            <Label Text="Người Dùng" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="End" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                            <Image Source="navbar_diamond.png" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="End" Grid.Column="2"/>
                         </Grid>
-                        <ListView x:Name="lstnd" RowHeight="60">
+                        <ListView x:Name="lstnd" RowHeight="60" ItemTapped="lstnd_ItemTapped">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
@@ -84,8 +86,8 @@
                                             </Grid.ColumnDefinitions>
 
                                             <Image Source="{Binding Hinh}" Grid.Column="0" HeightRequest="60" Aspect='AspectFit'/>
-                                            <Label Text="{Binding TenND}" Grid.Column="1" VerticalOptions="Center" FontSize="25" />
-                                            <Label Text="{Binding Diem}" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="25"/>
+                                            <Label Text="{Binding TenND}" Grid.Column="1" VerticalOptions="Center" FontSize="25" LineBreakMode="NoWrap" />
+                                            <Label Text="{Binding Diem}" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22"/>
                                         </Grid>
                                     </ViewCell>
                                 </DataTemplate>

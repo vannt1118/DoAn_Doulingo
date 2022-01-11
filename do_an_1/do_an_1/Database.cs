@@ -96,13 +96,34 @@ namespace do_an_1
                 return false;
             }
         }
-
-        public List<BaiHoc> LayBaiHocTheoChang(int machang)
+        /*
+        public bool TonTaiBH(int mand, string tenBH, int machang)
         {
             try
             {
                 var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                return connect.Query<BaiHoc>("select * from BaiHoc where MaChang=" + machang.ToString());
+                var data = connect.Table<BaiHoc>();
+                var d1 = data.Where(x => x.MaND == mand && x.TenBH == tenBH && x.MaChang == machang).FirstOrDefault();
+                if (d1 != null)
+                {
+                    return true;
+                }
+
+                else
+                    return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        */
+        public List<BaiHoc> LayBaiHocTheoChang(int machang, int mand)
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Query<BaiHoc>("select * from BaiHoc where (MaChang=" + machang.ToString() + " and MaND=" + mand.ToString() );
             }
             catch
             {
@@ -178,7 +199,7 @@ namespace do_an_1
             try 
             {
                 var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                return connect.Query<User>("select * from User order by Diem limit 5");
+                return connect.Query<User>("select * from User order by Diem DESC limit 5");
             }
             catch
             {
