@@ -24,7 +24,7 @@ namespace webapiqltruyen.Controllers
 
         [Route("api/ServiceController/LayTruyenTheoMa")]
         [HttpGet]
-        public IHttpActionResult LayTruyenTheoMa (int matruyen)
+        public IHttpActionResult LayTruyenTheoMa(int matruyen)
         {
             Dictionary<string, object> param = new Dictionary<string, object>();
             param.Add("matruyen", matruyen);
@@ -35,5 +35,60 @@ namespace webapiqltruyen.Controllers
                 return NotFound();
         }
 
+        [Route("api/ServiceController/LayDsTuTheoTruyen")]
+        [HttpGet]
+
+        public IHttpActionResult LayDsTuTheoTruyen(int matruyen)
+        {
+            Dictionary<string, object> param = new Dictionary<string, object>();
+            param.Add("matruyen", matruyen);
+            DataTable tb = Database.Read_Table("LayDsTuTheoTruyen", param);
+            if (tb != null && tb.Rows.Count > 0)
+                return Ok(tb);
+            else
+                return NotFound();
+        }
+
+        [Route("api/ServiceController/LayTuTheoMa")]
+        [HttpGet]
+
+        public IHttpActionResult LayTuTheoMa(int matu)
+        {
+            Dictionary<string, object> param = new Dictionary<string, object>();
+            param.Add("matu", matu);
+            DataTable tb = Database.Read_Table("LayDsTuTheoMa", param);
+            if (tb != null && tb.Rows.Count > 0)
+                return Ok(tb);
+            else
+                return NotFound();
+        }
+
+        [Route("api/ServiceController/LayDsTuDongNghia")]
+        [HttpGet]
+
+        public IHttpActionResult LayDsTuDongNghia(int matu)
+        {
+            Dictionary<string, object> param = new Dictionary<string, object>();
+            param.Add("matu", matu);
+            DataTable tb = Database.Read_Table("LayDsTuDongNghia", param);
+            if (tb != null && tb.Rows.Count > 0)
+                return Ok(tb);
+            else
+                return NotFound();
+        }
+
+        [Route("api/ServiceController/LayDsTuTraiNghia")]
+        [HttpGet]
+
+        public IHttpActionResult LayDsTuTraiNghia(int matu)
+        {
+            Dictionary<string, object> param = new Dictionary<string, object>();
+            param.Add("matu", matu);
+            DataTable tb = Database.Read_Table("LayDsTuTraiNghia", param);
+            if (tb != null && tb.Rows.Count > 0)
+                return Ok(tb);
+            else
+                return NotFound();
+        }
     }
 }

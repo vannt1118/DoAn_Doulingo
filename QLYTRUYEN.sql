@@ -207,9 +207,11 @@ GO
 
 create proc [dbo].[LayDsTuTheoTruyen](@matruyen int)
 as
-select tentu from tumoi
+select * from tumoi
 where matruyen = @matruyen
 GO
+
+
 
 create proc [dbo].[LayDsTuTheoMa](@matu int)
 as
@@ -219,13 +221,13 @@ GO
 
 create proc [dbo].[LayDsTuDongNghia](@matu int)
 as
-select tentu,nghia from tudn
+select * from tudn
 where matu = @matu
 GO
 
 create proc [dbo].[LayDsTuTraiNghia](@matu int)
 as
-select tentu,nghia from tutn
+select * from tutn
 where matu = @matu
 GO
 
