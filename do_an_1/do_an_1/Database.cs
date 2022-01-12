@@ -14,10 +14,8 @@ namespace do_an_1
             {
                 var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
                 connect.CreateTable<User>();
-                connect.CreateTable<Truyen>();
                 connect.CreateTable<BaiHoc>();
                 connect.CreateTable<GroupBH>();
-                connect.CreateTable<GroupTruyen>();
                 return true;
             }
             catch
@@ -143,18 +141,7 @@ namespace do_an_1
             }
         }
 
-        public List<Truyen> LayTruyenTheoNhom(int manhom)
-        {
-            try
-            {
-                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                return connect.Query<Truyen>("select * from Truyen where MaNhom=" + manhom.ToString());
-            }
-            catch
-            {
-                return null;
-            }
-        }
+       
 
         public List<BaiHoc> LayBaiHoc()
         {
@@ -169,18 +156,7 @@ namespace do_an_1
             }
         }
 
-        public List<Truyen> LayTruyen()
-        {
-            try
-            {
-                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                return connect.Table<Truyen>().ToList();
-            }
-            catch
-            {
-                return null;
-            }
-        }
+       
         public List<User> LayND()
         {
             try
@@ -234,19 +210,7 @@ namespace do_an_1
                 return false;
             }
         }
-        public bool ThemTruyen(Truyen tr)
-        {
-            try
-            {
-                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                connect.Insert(tr);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+        
 
         // Sửa dữ liệu
         public bool SuaNguoiDung(User nd)

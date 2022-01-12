@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SQLite;
 
 namespace do_an_1
 {
-    public class Truyen
+    public class truyen
     {
-        [PrimaryKey, AutoIncrement]
-        public int MaTruyen { get; set; }
-        public string TenTruyen { get; set; }
-        public int MaNhom { get; set; }
-        public string Hinh { get; set; }
+        public int Matruyen { get; set; }
+        public string Tentruyen { get; set; }
+        public string Noidung { get; set; }
+    
     }
 }

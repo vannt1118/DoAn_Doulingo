@@ -20,11 +20,11 @@
                 <StackLayout Padding="20">
                     <Label Text="Kho truyện Doulingo" Style="{StaticResource title}" />
                     <Label Text="Cải thiện khả năng đọc của bạn với những câu chuyện ngắn!" HorizontalOptions="Center" VerticalOptions="Center" FontSize="16" HorizontalTextAlignment="Center"/>
-                    <ListView x:Name="lsttr" ItemTapped="lsttr_ItemTapped" Margin="0,40, 0, 0" RowHeight="100">
+                    <ListView x:Name="lsttr" ItemTapped="lsttr_ItemTapped" Margin="0,40, 0, 0" RowHeight="60">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <Button Text="{Binding TenTruyen}" Style="{StaticResource btnnext}" Margin="0,10,0,10" HeightRequest="80"/>
+                                    <Button Text="{Binding Tentruyen}" Style="{StaticResource btnnext}" Margin="0,10,0,10" HeightRequest="60"/>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
