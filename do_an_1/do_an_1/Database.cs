@@ -14,10 +14,8 @@ namespace do_an_1
             {
                 var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
                 connect.CreateTable<User>();
-                connect.CreateTable<Truyen>();
                 connect.CreateTable<BaiHoc>();
                 connect.CreateTable<GroupBH>();
-                connect.CreateTable<GroupTruyen>();
                 return true;
             }
             catch
@@ -96,13 +94,34 @@ namespace do_an_1
                 return false;
             }
         }
-
-        public List<BaiHoc> LayBaiHocTheoChang(int machang)
+        /*
+        public bool TonTaiBH(int mand, string tenBH, int machang)
         {
             try
             {
                 var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                return connect.Query<BaiHoc>("select * from BaiHoc where MaChang=" + machang.ToString());
+                var data = connect.Table<BaiHoc>();
+                var d1 = data.Where(x => x.MaND == mand && x.TenBH == tenBH && x.MaChang == machang).FirstOrDefault();
+                if (d1 != null)
+                {
+                    return true;
+                }
+
+                else
+                    return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        */
+        public List<BaiHoc> LayBaiHocTheoChang(int machang, int mand)
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Query<BaiHoc>("select * from BaiHoc where (MaChang=" + machang.ToString() + " and MaND=" + mand.ToString() );
             }
             catch
             {
@@ -122,18 +141,7 @@ namespace do_an_1
             }
         }
 
-        public List<Truyen> LayTruyenTheoNhom(int manhom)
-        {
-            try
-            {
-                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                return connect.Query<Truyen>("select * from Truyen where MaNhom=" + manhom.ToString());
-            }
-            catch
-            {
-                return null;
-            }
-        }
+       
 
         public List<BaiHoc> LayBaiHoc()
         {
@@ -148,12 +156,26 @@ namespace do_an_1
             }
         }
 
-        public List<Truyen> LayTruyen()
+       
+        public List<User> LayND()
         {
             try
             {
                 var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                return connect.Table<Truyen>().ToList();
+                return connect.Table<User>().ToList();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public List<User> LayTopND()
+        {
+            try 
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Query<User>("select * from User order by Diem DESC limit 5");
             }
             catch
             {
@@ -188,19 +210,7 @@ namespace do_an_1
                 return false;
             }
         }
-        public bool ThemTruyen(Truyen tr)
-        {
-            try
-            {
-                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
-                connect.Insert(tr);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+        
 
         // Sửa dữ liệu
         public bool SuaNguoiDung(User nd)

@@ -22,19 +22,31 @@ namespace do_an_1
         {
             InitializeComponent();
             u = nd;
-            txtten.Text = nd.TenND;
-            txtemail.Text = nd.Email;
-            img.Source = nd.Hinh;
-            Thu();
+            HienThi(nd);
         }
 
+        void HienThi(User nd)
+        {
+            txtten.Text = nd.TenND;
+            txtemail.Text = nd.Email;
+            txtdiem.Text = nd.Diem.ToString();
+            img.Source = nd.Hinh;
+            KhoiTao();
+        }
         public NguoiDungPage(string ten, string hinh, string email)
         {
             InitializeComponent();
             txtten.Text = ten;
             txtemail.Text = email;
             img.Source = hinh;
-            Thu();
+            KhoiTao();
+        }
+        
+        void KhoiTao()
+        {
+            List<User> nds = new List<User>();
+            nds = db.LayTopND();
+            lstnd.ItemsSource = nds;
         }
         void Thu()
         {
@@ -103,6 +115,12 @@ namespace do_an_1
         {
             var mk = new MatKhauPage(u);
             await Navigation.PushModalAsync(mk);
+        }
+
+        private void lstnd_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            User u1 = db.LayNd(u.TenND);
+            HienThi(u1);
         }
     }
 }

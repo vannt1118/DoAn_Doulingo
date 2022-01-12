@@ -23,6 +23,8 @@ cache-path;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\ob
 color;obj\Debug\90\res\values\colors.xml
 corners;obj\Debug\90\res\drawable\horizontal_progress_bar.xml
 corners;obj\Debug\90\res\drawable\horizontal_track_bar.xml
+domain;obj\Debug\90\res\network_security_config.xml
+domain-config;obj\Debug\90\res\network_security_config.xml
 external-cache-path;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
@@ -31,6 +33,7 @@ FrameLayout;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\o
 item;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\lp\40\jl\res\values\styles.xml
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\lp\40\jl\res\layout\bottomtablayout.xml
+network-security-config;obj\Debug\90\res\network_security_config.xml
 paths;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\lp\40\jl\res\values\styles.xml
 resources;obj\Debug\90\res\values\colors.xml

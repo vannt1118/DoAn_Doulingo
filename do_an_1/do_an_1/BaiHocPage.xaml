@@ -10,7 +10,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="txtten" FontSize="25" FontAttributes="Bold" Margin="20,0,0,0" HorizontalOptions="Start" Grid.Column="0"/>
+                    <Label x:Name="txtten" FontSize="25" FontAttributes="Bold" Margin="20,0,0,0" HorizontalOptions="Start" TextColor="Black" Grid.Column="0"/>
                     <StackLayout Orientation="Horizontal" Grid.Column="1" HorizontalOptions="End">
                         <Image Source="navbar_diamond.png" HeightRequest="30" VerticalOptions="Center"/>
                         <Label x:Name="txtdiem" FontSize="25" VerticalOptions="Center" FontAttributes="Bold" Margin="0, 0, 10, 0"/>
@@ -54,7 +54,7 @@
                                             Padding="10">
                                     <!-- chỗ này chỉnh lại-->
                                     <BoxView 
-                                                BackgroundColor="SkyBlue"
+                                                BackgroundColor="LightBlue"
                                                 CornerRadius="65"
                                                 HeightRequest="{OnPlatform Android=100,
                                                                            iOS=120}"
@@ -74,13 +74,13 @@
                                     <Grid
                                                 HorizontalOptions="End"
                                                 VerticalOptions="End"
-                                                WidthRequest="40">
+                                                WidthRequest="50">
                                         <Image Source="{Binding ThanhTich}"/>
                                         <Label 
-                                                    FontSize="20"
+                                                    FontSize="16"
                                                     HorizontalTextAlignment="Center"
-                                                    Text="1"
-                                                    TextColor="#ce8830"
+                                                    Text="{Binding Diem}"
+                                                    TextColor="DarkGreen"
                                                     VerticalTextAlignment="Center"/>
 
                                     </Grid>
