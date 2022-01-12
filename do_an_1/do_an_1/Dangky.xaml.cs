@@ -25,10 +25,9 @@ namespace do_an_1
             var ten = usrname.Text;
             var email = txtemail.Text;
             var mk = txtmk.Text;
-            if (ten == "" || mk == "")
+            if (ten == null || mk == null || email == null)
             {
                 DisplayAlert("Thông báo", "Vui lòng điền đầy đủ thông tin.", "OK");
-
             }
 
             else if (db.TonTai(ten, email) == true)
@@ -39,7 +38,6 @@ namespace do_an_1
             }
             else
             {
-
                 User nd = new User();
                 nd.TenND = usrname.Text;
                 nd.MatKhau = txtmk.Text;

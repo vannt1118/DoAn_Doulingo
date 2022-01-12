@@ -207,7 +207,7 @@ GO
 
 create proc [dbo].[LayDsTuTheoTruyen](@matruyen int)
 as
-select * from tumoi
+select matu,tentu,nghia1,nghia2,matruyen,vidu from tumoi
 where matruyen = @matruyen
 GO
 

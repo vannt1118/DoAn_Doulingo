@@ -101,8 +101,8 @@ namespace do_an_1
 
         private async void btndx_Clicked(object sender, EventArgs e)
         {
-            var dn = new MainPage();
-            await Navigation.PushModalAsync(dn);
+
+            await Navigation.PopToRootAsync();
             
         }
 

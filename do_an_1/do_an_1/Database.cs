@@ -16,6 +16,7 @@ namespace do_an_1
                 connect.CreateTable<User>();
                 connect.CreateTable<BaiHoc>();
                 connect.CreateTable<GroupBH>();
+                connect.CreateTable<Question>();
                 return true;
             }
             catch
@@ -219,6 +220,83 @@ namespace do_an_1
             {
                 var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
                 connect.Update(nd);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        // Câu hỏi
+        public List<Question> SelectQuestions(int i)
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Table<Question>().Where(t => t.Lessonid == i).ToList();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public List<Question> SelectAllQuestions()
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Table<Question>().ToList();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public bool InsertQuestion(Question q)
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                connect.Insert(q);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public Question SelectQuestion(int i)
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                return connect.Table<Question>().FirstOrDefault(t => t.Id == i);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public bool UpdateQuestion(Question q)
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                connect.Update(q);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool DeleteQuestion(Question q)
+        {
+            try
+            {
+                var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "ql.db"));
+                connect.Delete(q);
+                connect.Query<Question>("UPDATE SQLITE_SEQUENCE SET SEQ = 0");
                 return true;
             }
             catch

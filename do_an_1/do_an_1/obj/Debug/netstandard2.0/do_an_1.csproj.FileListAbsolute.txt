@@ -75,3 +75,7 @@ C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard
 C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard2.0\do_an_1.pdb
 C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard2.0\NdTruyenPage.xaml.g.cs
 C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard2.0\TuMoiPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard2.0\BatDauPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard2.0\ResultPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1\obj\Debug\netstandard2.0\Page2.xaml.g.cs

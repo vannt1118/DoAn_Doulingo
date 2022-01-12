@@ -1668,3 +1668,4 @@ C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\
 C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\do_an_1\do_an_1.Android\obj\Debug\90\res\drawable\like.gif

@@ -12,7 +12,8 @@ namespace do_an_1
             Database db = new Database();
             db.CreateDatabase();
 
-            MainPage = new NavigationPage(new MainPage());
+            // MainPage = new NavigationPage(new MainPage());
+            MainPage = new Page2();
         }
 
         protected override void OnStart()

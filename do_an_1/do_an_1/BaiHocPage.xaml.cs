@@ -23,6 +23,7 @@ namespace do_an_1
             
         }
 
+        
         void HienThi(User nd)
         {
             txtdiem.Text = nd.Diem.ToString();
@@ -42,25 +43,27 @@ namespace do_an_1
             {
                 new BaiHoc
                 {
-                    TenBH = "Baby",
-                    Hinh = "lesson_baby.png",
+                    MaBH = 1,
+                    TenBH = "Gia Đình",
+                    Hinh = "family.png",
                     MaChang = 1,
-                    Diem = 50,
+                    Diem = 40,
                     ThanhTich = "crown_stroke.png"
 
                 },
                 new BaiHoc
                 {
-
-                    TenBH = "Bag",
+                    MaBH = 2,
+                    TenBH = "Du lịch",
                     Hinh = "lesson_bag.png",
                     MaChang = 1,
-                    Diem = 50,
+                    Diem = 40,
                     ThanhTich = "crown_stroke.png"
                 },
                 new BaiHoc
                 {
-                    TenBH = "Egg",
+                    MaBH = 3,
+                    TenBH = "Thực phẩm",
                     Hinh = "lesson_egg.png",
                     MaChang = 1,
                     Diem = 50,
@@ -188,8 +191,14 @@ namespace do_an_1
 
         private void lstbh_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            u.Diem += 10;
-            if (db.SuaNguoiDung(u) == true) HienThi(u);
+            //u.Diem += 10;
+            //if (db.SuaNguoiDung(u) == true) HienThi(u);
+
+            if (e.Item != null)
+            {
+                BaiHoc bh = (BaiHoc)e.Item;
+                Navigation.PushAsync(new BatDauPage(bh));
+            }    
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
