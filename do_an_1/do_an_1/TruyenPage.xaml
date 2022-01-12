@@ -20,33 +20,11 @@
                 <StackLayout Padding="20">
                     <Label Text="Kho truyện Doulingo" Style="{StaticResource title}" />
                     <Label Text="Cải thiện khả năng đọc của bạn với những câu chuyện ngắn!" HorizontalOptions="Center" VerticalOptions="Center" FontSize="16" HorizontalTextAlignment="Center"/>
-                    <ListView x:Name="lsttr" HasUnevenRows="True" IsGroupingEnabled="True"
-                      GroupDisplayBinding="{Binding MaNhom }" ItemTapped="lsttr_ItemTapped" Margin="0,40, 0, 0">
-                        <ListView.GroupHeaderTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <StackLayout Padding="0,20, 0,10">
-                                        <Label Text="----- Nhóm -----" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="DarkGreen"/>
-                                        <Label Text="{Binding TenNhom}" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="DarkGreen"/>
-                                    </StackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.GroupHeaderTemplate>
-
+                    <ListView x:Name="lsttr" ItemTapped="lsttr_ItemTapped" Margin="0,40, 0, 0" RowHeight="100">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <StackLayout>
-                                        <Grid>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="150"/>
-                                                <RowDefinition Height="50"/>
-                                            </Grid.RowDefinitions>
-                                            <ImageButton Source="{Binding Hinh}" HeightRequest="150" Clicked='ImageButton_Clicked' BackgroundColor="Transparent"
-                                                 Grid.Row="0" HorizontalOptions="Center"/>
-                                            <Label Text="{Binding TenTruyen}" FontSize="Subtitle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start"/>
-                                        </Grid>
-                                    </StackLayout>
+                                    <Button Text="{Binding TenTruyen}" Style="{StaticResource btnnext}" Margin="0,10,0,10" HeightRequest="80"/>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>

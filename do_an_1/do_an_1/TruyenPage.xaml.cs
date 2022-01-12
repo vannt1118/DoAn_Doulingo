@@ -25,13 +25,46 @@ namespace do_an_1
             InitializeComponent();
             u = nd;
             HienThi(nd);
-            Thu();
+            KhoiTao();
 
         }
         void HienThi(User nd)
         {
             txtdiem.Text = nd.Diem.ToString();
             txtten.Text = nd.TenND;
+        }
+        void KhoiTao()
+        {
+            List<Truyen> trs = new List<Truyen>
+            {
+                 new Truyen
+                {
+                    TenTruyen = "Family 1",
+                    MaNhom = 1,
+                    Hinh = "family_1.png"
+                },
+                new Truyen
+                {
+                    TenTruyen = "Family 2",
+                    MaNhom = 1,
+                    Hinh = "family_2.png"
+                },
+                new Truyen
+                {
+                    TenTruyen = "Family 3",
+                    MaNhom = 1,
+                    Hinh = "family_3.png"
+                },
+                new Truyen
+                {
+                    TenTruyen = "Family 4",
+                    MaNhom = 2,
+                    Hinh = "family_4.png"
+                },
+
+
+            };
+            lsttr.ItemsSource = trs;
         }
         void Thu()
         {
