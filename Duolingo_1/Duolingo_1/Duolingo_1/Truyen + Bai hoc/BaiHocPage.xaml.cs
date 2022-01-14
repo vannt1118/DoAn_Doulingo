@@ -67,7 +67,7 @@ namespace Duolingo_1
                     TenBH = "Thực phẩm",
                     Hinh = "lesson_egg.png",
                     MaChang = 1,
-                    Diem = 50,
+                    Diem = 40,
                     ThanhTich = "crown_stroke.png"
 
                 }
@@ -78,7 +78,7 @@ namespace Duolingo_1
             {
                 new BaiHoc
                 {
-
+                    MaBH = 4,
                     TenBH = "Pencil",
                     Hinh = "lesson_pencil.png",
                     MaChang = 2,
@@ -88,7 +88,7 @@ namespace Duolingo_1
                 },
                 new BaiHoc
                 {
-
+                    MaBH = 5,
                     TenBH = "Bike",
                     Hinh = "lesson_bike.png",
                     MaChang = 2,
@@ -97,6 +97,7 @@ namespace Duolingo_1
                 },
                 new BaiHoc
                 {
+                    MaBH = 6,
                     TenBH = "Hat",
                     Hinh = "lesson_hat.png",
                     MaChang = 2,

@@ -30,9 +30,18 @@ namespace Duolingo_1
 
         private void gotoTest_Clicked(object sender, EventArgs e)
         {
-
-            Navigation.PushModalAsync(new TestPage(b,u));
+            if(b.MaBH != 1 && b.MaBH !=2 && b.MaBH !=3)
+            {
+                DisplayAlert("Thông báo", "Câu hỏi chưa được cập nhật. Vui lòng chọn bài học khác.", "OK");
+            }   
+            else
+            {
+                
+                Navigation.PushModalAsync(new TestPage(b, u));
+            
+            }
             PopupNavigation.Instance.PopAsync();
+
         }
     }
 }
