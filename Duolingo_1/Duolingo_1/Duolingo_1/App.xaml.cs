@@ -15,10 +15,11 @@ namespace Duolingo_1
             db.CreateDatabase();
             qdb.CreateDatabase();
 
-            MainPage = new NavigationPage(new MainPage());
+           MainPage = new NavigationPage(new MainPage());
 
             // Xem danh sách câu hỏi
             //MainPage = new Page2();
+
         }
 
         protected override void OnStart()

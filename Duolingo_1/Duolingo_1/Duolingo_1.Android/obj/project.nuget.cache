@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FoqEVcabu6MSa4rhd/ChH7C0Y6i6F6WDrEaIddRJGEpMHnugQKbA1PIz0Wg8EVwPe32RUHCsRNwrCWuzLrr8QA==",
+  "dgSpecHash": "Gt5NlnD7WSV/Nh4MiFtsKTCg7iSeK+miTLm3mDSfSMXmfg+/Xh7kMSh72D+sgjM1bFYvwpyu+fp8KcKY0O03AA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\Duolingo_1.Android.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\Duolingo_1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\rg.plugins.popup\\2.0.0.14\\rg.plugins.popup.2.0.0.14.nupkg.sha512",

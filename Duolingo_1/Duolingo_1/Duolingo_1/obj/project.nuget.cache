@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "53vVDNlEpM8Fs9J+q+ba9V+YgzGMNmacVbl2gH2XZGwBXJIBqjlaaQVcLPjYHTG8IpZJTJ5zVe7Gkjivxeauhg==",
+  "dgSpecHash": "3ycUXVK8ABrcr//Wy6fevhotFa400MzLn1v1hRVwCvqaLqiDD8AGXt9PB5cTQRYfEMSIvLD1QalCBRQVu3hsGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1\\Duolingo_1.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1\\Duolingo_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

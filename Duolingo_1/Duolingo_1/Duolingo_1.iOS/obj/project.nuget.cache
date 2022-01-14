@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KxnfRYVBtefbiOlcrSEHmmC4Vky1ldN0FcyL8U8mPblepC7iUOYhTK5Bj3FI78CVXECi3nH62K2yhxQxBooLHQ==",
+  "dgSpecHash": "M3KE5D9gly4BW6RwbsUCVsFxVdyENYe5jcjVEMtPIUA9xwkcitaG1vTHSjPpU9GCOzTbaPeAL5YEyyKP9021/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1.iOS\\Duolingo_1.iOS.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1.iOS\\Duolingo_1.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\rg.plugins.popup\\2.0.0.14\\rg.plugins.popup.2.0.0.14.nupkg.sha512",

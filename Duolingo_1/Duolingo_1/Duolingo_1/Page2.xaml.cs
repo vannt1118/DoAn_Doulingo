@@ -16,6 +16,7 @@ namespace Duolingo_1
         {
             InitializeComponent();
             db = new QuestionDatabase();
+            
             ShowQuestions();
         }
         /*
@@ -45,6 +46,10 @@ namespace Duolingo_1
         {
             List<Question> lstq;
             lstq = db.SelectAllQuestions();
+            if (lstq.Count == 0)
+            {
+                db.CreateQuestion();
+            }    
             lstquestion.ItemsSource = lstq;
         }
        

@@ -3513,11 +3513,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\Duolingo_1.Android.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\Duolingo_1.Android.csproj",
       "projectName": "Duolingo_1.Android",
-      "projectPath": "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\Duolingo_1.Android.csproj",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\Duolingo_1.Android.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3538,8 +3538,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1\\Duolingo_1.csproj": {
-              "projectPath": "C:\\Users\\PC\\Downloads\\Duolingo_1\\Duolingo_1\\Duolingo_1\\Duolingo_1.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1\\Duolingo_1.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DoAn_Duolingo\\Duolingo_1\\Duolingo_1\\Duolingo_1\\Duolingo_1.csproj"
             }
           }
         }

@@ -101,3 +101,37 @@ C:\Users\PC\Downloads\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\
 C:\Users\PC\Downloads\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.dll
 C:\Users\PC\Downloads\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\ref\Duolingo_1.dll
 C:\Users\PC\Downloads\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.pdb
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\bin\Debug\netstandard2.0\Duolingo_1.deps.json
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\bin\Debug\netstandard2.0\Duolingo_1.dll
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\bin\Debug\netstandard2.0\ref\Duolingo_1.dll
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\bin\Debug\netstandard2.0\Duolingo_1.pdb
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Page2.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\TabPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\TestPages\BatDauPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\TestPages\BatDauTest.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\TestPages\ResultPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\TestPages\TestPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Truyen + Bai hoc\BaiHocPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Truyen + Bai hoc\NdTruyenPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Truyen + Bai hoc\TruyenPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Truyen + Bai hoc\TuMoiPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\CapDo.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\ChinhSuaPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\Dangky.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\MatKhauPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\MucTieu.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\NguoiDungPage.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\SauDangXuat.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\SignIn.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\Taohs.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\UserPages\TongQuan.xaml.g.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.AssemblyInfo.cs
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.dll
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\ref\Duolingo_1.dll
+C:\Users\PC\Documents\GitHub\DoAn_Duolingo\Duolingo_1\Duolingo_1\Duolingo_1\obj\Debug\netstandard2.0\Duolingo_1.pdb
