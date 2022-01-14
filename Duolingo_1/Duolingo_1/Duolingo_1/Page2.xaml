@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Duolingo_1.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout JustifyContent="SpaceBetween">
+                <Entry x:Name="txtid" IsReadOnly="True" WidthRequest="40" Placeholder="ID"/>
+                <Entry x:Name="txtlessonid" WidthRequest="80" Placeholder="LID"/>
+                <Entry x:Name="txtques" WidthRequest="320"  Placeholder="Nhập nội dung câu hỏi"/>
+            </FlexLayout>
+            <FlexLayout JustifyContent="SpaceBetween">
+                <Entry x:Name="txtresp1" WidthRequest="80" Placeholder="Resp1"/>
+                <Entry x:Name="txtresp2" WidthRequest="80" Placeholder="Resp2"/>
+                <Entry x:Name="txtresp3" WidthRequest="80" Placeholder="Resp3"/>
+                <Entry x:Name="txtresp4" WidthRequest="80" Placeholder="Resp4"/>
+                <Entry x:Name="txtcorrect" WidthRequest="80" Placeholder="Correct"/>
+            </FlexLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="them" Text="Thêm" Clicked="them_Clicked"/>
+                <Button x:Name="ghi" Text="Ghi" Clicked="ghi_Clicked"/>
+                <Button x:Name="khongghi" Text="Không Ghi" Clicked="khongghi_Clicked"/>
+                <Button x:Name="xoa" Text="Xóa" Clicked="xoa_Clicked"/>
+            </StackLayout>
+            <ListView x:Name="lstquestion" SeparatorColor="Red" ItemTapped="lstquestion_ItemTapped" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <FlexLayout Wrap="Wrap">
+                                    <Label Text="{Binding Id}"  WidthRequest="20" TextColor="Black" />
+                                    <Label Text="{Binding Lessonid}" WidthRequest="55" TextColor="Black" />
+                                    <Label Text="{Binding Quest_}" WidthRequest="300" TextColor="Black" />
+                                </FlexLayout>
+                                <FlexLayout JustifyContent="SpaceBetween">
+                                    <Label Text="{Binding resp1_}" WidthRequest="80" TextColor="Blue" />
+                                    <Label Text="{Binding resp2_}" WidthRequest="80" TextColor="Blue" />
+                                    <Label Text="{Binding resp3_}" WidthRequest="80" TextColor="Blue"/>
+                                    <Label Text="{Binding resp4_}" WidthRequest="80" TextColor="Blue" />
+                                    <Label Text="{Binding Correct}" WidthRequest="80" TextColor="Red" />
+                                </FlexLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
