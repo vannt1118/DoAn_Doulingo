@@ -158,6 +158,7 @@ VALUES (15,30,'painful',N'Đau')
 INSERT [dbo].[tudn] ([matudn],[matu],[tentu],[nghia])
 VALUES (16,30,'sore ',N'Đau')
 -- Thêm từ đồng nghĩa --
+/*
 INSERT [dbo].[tudn] ([matudn],[matu],[tentu],[nghia])
 VALUES (17,2,'',N'')
 INSERT [dbo].[tudn] ([matudn],[matu],[tentu],[nghia])
@@ -211,7 +212,7 @@ VALUES (41,30,'',N'')
 INSERT [dbo].[tudn] ([matudn],[matu],[tentu],[nghia])
 VALUES (42,31,'',N'')
 INSERT [dbo].[tudn] ([matudn],[matu],[tentu],[nghia])
-VALUES (43,32,'',N'')
+VALUES (43,32,'',N'')*/
 -- --
 SET IDENTITY_INSERT [dbo].[tudn] OFF
 GO
@@ -242,6 +243,7 @@ INSERT [dbo].[tutn] ([matutn],[matu],[tentu],[nghia])
 VALUES (11,30,'clumsy',N'Hậu đậu')
 
 -- Thêm từ trái nghĩa --
+/*
 INSERT [dbo].[tutn] ([matutn],[matu],[tentu],[nghia])
 VALUES (12,2,'',N'')
 INSERT [dbo].[tutn] ([matutn],[matu],[tentu],[nghia])
@@ -293,7 +295,7 @@ VALUES (35,29,'',N'')
 INSERT [dbo].[tutn] ([matutn],[matu],[tentu],[nghia])
 VALUES (36,31,'',N'')
 INSERT [dbo].[tutn] ([matutn],[matu],[tentu],[nghia])
-VALUES (37,32,'',N'')
+VALUES (37,32,'',N'')*/
 
 
 -- --
